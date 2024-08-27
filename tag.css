@@ -1,0 +1,26 @@
+.shell_tag {
+    background-color: #96b9ff;
+    color: #1f1f1f;
+    font-size: 13px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+.python_tag {
+    background-color: #fccd4e;
+    color: #1f1f1f;
+    font-size: 13px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+.html_tag {
+    background-color: #fc9c4e;
+    color: #1f1f1f;
+    font-size: 13px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 20px;
+    font-weight: 400;
+}

@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' -25, 'opsz' 24
+}
+
+body {
+    background-color: #1f1f1f;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #ffffff;
+    font-family: "jf-jinxuan", sans-serif;
+    display: flex;
+    line-height: 1.2em;
+    flex-wrap: nowrap;
+}
+
+.text {
+    vertical-align: middle;
+}
+
+.copy-button {
+    background-color: #ffffff00;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    outline: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.sidebar_box {
+    width: 20%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #333;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+    margin-left: 2em;
+    line-height: 40px;
+}
+
+li {
+    min-height: 50px;
+    line-height: 40px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: rgb(145, 181, 253);
+    line-height: 50px;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.codeDisplay {
+    background-color: #354863;
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    border-radius: .3em
+}
+
+.imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+}
+
+img {
+    border-radius: 10px;
+}
+
+#content {
+    width: 80%;
+    padding-left: 50px;
+    margin-left: 20%;
+    overflow-x: hidden;
+}
+
+.imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar_box {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .sidebar_box.active {
+        display: block;
+        width: 80%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 999;
+        background-color: #333;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+    #content {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
