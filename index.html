@@ -38,6 +38,85 @@
     <div id="content">
         <h1>基礎網頁設計實作工作坊</h1>
         <hr>
+        <h2 id="035Q53ETGO">本次所需工具</h2>
+        <a href="https://code.visualstudio.com/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">VSCODE</span>
+        </a><br>
+        <a href="https://git-scm.com/downloads">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">git</span>
+        </a><br>
+        <a href="https://github.com/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">Github</span>
+        </a><br>
+        <a href="https://figma.com/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">figma</span>
+        </a><br>
+        <span style="color: red;font-size: 10px;">請以edu信箱註冊</span>
+        <hr>
+        <h2 id="ONMOA1858">其他資源</h2>
+        <br>
+        <a href="https://caniuse.com/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">兼容確認：Can I Use?</span>
+        </a><br>
+        <a href="https://fonts.google.com/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">網頁字型：Google Font</span>
+        </a><br>
+        <a href="https://zeabur.com/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">伺服器部署：Zeaber</span>
+        </a><br>
+        <a href="https://neocities.org/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">靜態網頁部署：Neocities</span>
+        </a>
+        <hr>
+        <h2 id="ONNOF9849">學習資源</h2>
+        <br>
+        <a href="https://caniuse.com/">
+            <span class="https://www.w3schools.com/html/" style="vertical-align: middle">link</span>
+            <span class="text">w3schools</span>
+        </a><br>
+        <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">mozilla</span>
+        </a>
+        <hr>
+        <h2 id="19ASFPET">素材</h2>
+        <br>
+        <a href="https://unsplash.com/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">無版權圖片庫：unsplash</span>
+        </a><br>
+        <a href="https://fontawesome.com/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">社交圖示：Font Awesome</span>
+        </a>
+        <h2 id="KPOIHJP6459">使用套件</h2>
+        <br>
+        <a href="https://owlcarousel2.github.io/OwlCarousel2/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">圖片滑塊：OwlCarousel2</span>
+        </a>
+        <div class="code-container">
+            <pre><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css&quot; /&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js&quot;&gt;&lt;/script&gt;
+                </code></pre>
+        </div>
+        <br>
+        <a href="https://jquery.com/">
+            <span class="material-symbols-outlined" style="vertical-align: middle">link</span>
+            <span class="text">套件庫：jQuery</span>
+        </a>
+        <div class="code-container">
+            <pre><code class="language-markup">&lt;script src=&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+        </div>
+        <hr>
         <section class="introduceBox">
             <h2 id="WhatIsFront-End">什麼是「網頁前端Front-End）」？</h2>
             <p>網頁前端泛指用户在瀏覽器中看到並與之交互的部分，可以由文字、圖片、多媒體構成。主要目的是顯示資訊、提供後端程式交互的平台。</p><br>
@@ -200,6 +279,36 @@ h1{
     font-size:20px;
 }</code></pre>
         </section>
+        <hr>
+        <h2 id="hoaagfno">Github部署</h2>
+        <p>透過git工具將檔案推送至Github倉庫</p><br>
+        <h3>1.註冊Github</h3><br>
+        <h3>2.新建倉庫</h3>
+        <div class="imgBox">
+            <img style="width: 80%;" src="./images/haoiuf56.png" alt="新建倉庫">
+        </div>
+        <h3>3.在本地進行git工程</h3>
+        <div class="code-container">
+            <pre><code class="language-shell">cd C://專案路徑</code></pre>
+        </div>
+        <div class="code-container">
+            <pre><code class="language-shell">git remote add origin https://github.com/你的使用者名稱/你的倉庫名.git</code></pre>
+        </div>
+        <div class="code-container">
+            <pre><code class="language-shell">git remote -v</code></pre>
+        </div>
+        <div class="code-container">
+            <pre><code class="language-shell">git add .</code></pre>
+        </div>
+        <div class="code-container">
+            <pre><code class="language-shell">git commit -m "提交資訊"</code></pre>
+        </div>
+        <div class="code-container">
+            <pre><code class="language-shell">git push -u origin master</code></pre>
+        </div>
+        <div class="code-container">
+            <pre><code class="language-shell">git push -u origin main</code></pre>
+        </div>
         </div>
 
         <script src="script.js"></script>
