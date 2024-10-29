@@ -6,6 +6,8 @@
     position: sticky;
     top: 0;
     overflow-y: auto;
+    font-family: 'xingothic-tc';
+    font-weight: 500;
 }
 
 #sidebar a {

@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -16,7 +17,10 @@ body {
     line-height: 1.2em;
     flex-wrap: nowrap;
 }
-
+.jf-reloading body{ /* _jf.flush() 執行中不顯示*/
+    opacity: 0;
+    visibility: hidden;
+}
 .text {
     vertical-align: middle;
 }
@@ -75,9 +79,13 @@ hr {
 a {
     color: rgb(145, 181, 253);
     line-height: 50px;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "xingothic-tc", sans-serif;
 }
-
+.showImageHint{
+    font-family: 'xingothic-tc';
+    font-weight: 200;
+    font-size: 12px;
+}
 .imgBox {
     display: flex;
     justify-content: center;
@@ -89,12 +97,15 @@ a {
 img {
     border-radius: 10px;
 }
+.li_margin{
+    margin-top: 70px;
+}
 
 #content {
-    width: 80%;
+    width: 60%;
     padding-left: 50px;
     margin-left: 20%;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .imgBox {
@@ -141,7 +152,75 @@ img {
     margin: 5px 0;
 }
 
+
+.img-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.showImage {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.showImage:hover {
+    opacity: 0.7;
+}
+
+/* Dialog 样式 */
+/* Dialog 样式 */
+dialog {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* 背景變暗 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    z-index: 1000;
+    width: auto; /* 調整寬度以適應內容 */
+    height: auto; /* 調整高度以適應內容 */
+}
+
+dialog img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* 確保圖片按比例縮放 */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001; /* 保證關閉按鈕位於圖片之上 */
+}
+.jx-knightlab{
+    display: none;
+    z-index:0;
+}
+
 @media only screen and (max-width: 600px) {
+    body {
+        background-color: #1f1f1f;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .img-container {
+        width: 90%;
+        margin: 0 auto;
+        
+    }
     .sidebar_box {
         display: none;
     }
@@ -150,7 +229,7 @@ img {
     }
     .sidebar_box.active {
         display: block;
-        width: 80%;
+        width: 60%;
         position: fixed;
         left: 0;
         top: 0;
@@ -164,5 +243,19 @@ img {
         width: 100%;
         margin-left: 0;
         padding-left: 0;
+    }
+    p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    li{
+        font-size: 12px;
+
+    }
+    .li_margin{
+        margin-top: 30px;
+    }
+    li {
+        line-height: 25px;
     }
 }
